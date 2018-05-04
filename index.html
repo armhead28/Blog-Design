@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/Footer-with-button-logo.css">
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+  body {
+      position: relative; 
+  }
+  #section1 {padding-top:50px;height:100%;color: #fff;}
+  #section2 {padding-top:50px;height:100%px;color: black; background-image: url("image/back1.jpg")}
+  #section3 {padding-top:50px;height:100%;color: black; background-color: #ECECEC;background-image: url("image/back.jpg")  }
+  #section4 {padding-top:50px;height:100%;color: black; background-color: #ECECEC;background-image: url("image/back2.jpg")  }
+  #section5 {padding-top:50px;height:100%;color: black; background-color: #ECECEC;background-image: url("image/.jpg")  }
+  /*#section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}*/
+  .box
+  {
+    height:40px;
+    border-radius: 3px;
+    width: 100%;
+    border: 1px solid #717171  ;
+    margin-top: 5px;
+  }
+  .areabox
+  {
+    border-radius: 3px;
+    width: 100%;
+    border: 1px solid #717171  ;
+    margin-top: 5px;
+  }
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #1B90BF;
+  }
+
+  .button1:hover {
+      background-color: #1B90BF;
+      color: white;
+  }
+  .button {
+    
+    border: 2px solid #08739E;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .cuadro_intro_hover{
+        padding: 0px;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+  }
+  .cuadro_intro_hover:hover .caption{
+    opacity: 1;
+    transform: translateY(-150px);
+    -webkit-transform:translateY(-150px);
+    -moz-transform:translateY(-150px);
+    -ms-transform:translateY(-150px);
+    -o-transform:translateY(-150px);
+  }
+  .cuadro_intro_hover img{
+    z-index: 4;
+  }
+  .cuadro_intro_hover .caption{
+    position: absolute;
+    top:150px;
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+    -ms-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    width: 100%;
+  }
+  .cuadro_intro_hover .blur{
+    background-color: rgba(0,0,0,0.7);
+    height: 300px;
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+  }
+  .cuadro_intro_hover .caption-text{
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    height: 300px;
+    text-align: center;
+    top:-20px;
+    width: 100%;
+  }
+  .round
+  {
+    border-radius: 50%;
+  }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" style="height: 70px; background-color: ##535354">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="margin-top: 10px; font-size: 30px; font-family: monospace;">Iterne Thoughts</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav" style="float: right; margin-top: 10px; color: black">
+          <li><a href="#section1" class="active">Home</a></li>
+          <li><a href="#section2">Writings..!</a></li>
+          <li><a href="#section3">About</a></li>
+          <li><a href="#section4">Contact us</a></li>
+          <li><a href="#section5">In the Last</a></li>
+         <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Section 4-1</a></li>
+              <li><a href="#section42">Section 4-2</a></li>
+            </ul>
+          </li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="section1" class="container-fluid">
+  <div style="height:30px"></div>
+  
+   
+  <div class="container" style="width:100%; padding-left:5px !important; padding-right:5px !important; background-color: white " >
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" style="align-self: center;">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides--> 
+    <div class="carousel-inner" style="z-index:auto">
+
+      <div class="item">
+        <img src="image/1.jpg" alt="game" style="width:100%;">
+        <div class="carousel-caption font-change">
+          <h3>Game Of Irony</h3>
+          <p>Gaming is always so much fun!</p>
+        </div>
+      </div>
+
+      <div class="item active">
+        <img src="image/2.jpg" alt="eggs" style="width:100%;">
+        <div class="carousel-caption font-change">
+          <h3>Happy EGGS!!</h3>
+          <p>Always being happy is the best thing..!!</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="image/3.jpg" alt="ocean" style="width:100%;">
+        <div class="carousel-caption font-change">
+          <h3>Sea Shore walls..!!</h3>
+          <p>Inner peace is about yourself..!!!</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="image/4.jpg" alt="music" style="width:100%;">
+        <div class="carousel-caption font-change">
+          <h3>Music Overloaded..!!</h3>
+          <p>Peace comes with lighT music..!!</p>
+        </div>
+      </div>
+
+      <div style="height:10px"></div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class=""></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class=""></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+
+<div id="section2" class="container-fluid">
+  <div class="container">
+    <div class="col-lg-6 col-md-6 col-sm-6">
+      <div class="panel panel-warning">
+      <div class="panel-body">
+        <h1 style="font-family: Algerian; font-size: 30px; text-align: center"> Bas fark sirf itna h(janaza)</h1><hr>
+        <p style="font-family: monospace; font-size: 12px;"> 
+        Aaj fir mere liye marakabah sajaya jaa rha h,<br>
+        Bs fark sirf itna h uss din sb khush the, aj sb hazin me,<br>
+        Aaj fir mere sakan me logo k huzum ne apna padaw dala h,<br>
+        Bs fark sirf itna h us din logo ka dil farih’ tha aaj sb yabki me,<br>
+        Aaj fir mujhe nahlakar naye libas pahnaya jaa rha h,<br>
+        Bs fark sirf itna h us din mai serwani me tha aur aaj mai kafan k libas me,<br>
+        Aaj fir mere sath logo ka yashid chal pada h,<br>
+        Bs fark sirf itna h us din mera zawaj tha aur mai milunga turba-e-khaak me,<br>
+        Bs fark sirf itna h ki uss din mera Nikah tha aur aaj mera ZANAZA uth rha h…!!!!
+        </p>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-lg-offset-6 col-md-offset-6 col-sm-offset-6">
+      <div class="panel panel-warning">
+      <div class="panel-body">
+        <h1 style="font-family: Algerian; font-size: 30px; text-align: center"> It was a long time ago</h1><hr>
+        <p style="font-family: monospace; font-size: 12px;"> 
+        It was a long time ago when everything goes wrong,<br>
+        I dropout from a school thinking zot,<br>
+        Then failed my plus one again being dolt,<br>
+        Having hold on home feels like garbage,<br>
+        No one talks, everyone talks with outrage,<br>
+        It was a feeling that nothing left in vitality,<br>
+        Sometimes i think to jumpoff and get serenity,<br>
+        But again i think to resolve my vitality,<br>
+        Once again i started to live my vivacity,<br>
+        It was a long time ago when everything goes wrong…!!
+        </p>
+      </div>
+    </div>
+    </div>
+
+     <div class="col-lg-6 col-md-6 col-sm-6">
+      <div class="panel panel-warning">
+      <div class="panel-body">
+        <h1 style="font-family: Algerian; font-size: 30px; text-align: center"> Maine Dekha Hai</h1><hr>
+        <p style="font-family: monospace; font-size: 12px;"> 
+        Maine dekha h jeet ke josh ko,<br>
+        dekha h maine haar ki tilmilahat bhi,<br>
+        Maine dekha h rajai me thithurte logo ko,<br>
+        Dekha h nange badan thand me karvat badalne walo ko bhi,<br>
+        Maine dekha h 10 rupaye k liye logo ko jhagadte,<br>
+        Dekha h 2 rupay ke gubbare bikne ki khushi bhi,<br>
+        Maine dekha h ladkiyo ko devi ka roop mante huye,<br>
+        Unhi logo ko unhe satate huye dekha h,<br>
+        Maine apni is chotti zindagi me shayad kuch na dekha ho,<br>
+        Par maine logo ke rang pahchanana seekha h….!!
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="section3" class="container-fluid">
+  <br><br><br>
+  <div class="container">
+    <div class="col-lg-6 col-md-6 col-sm-6">
+      <div class="panel panel-default">
+      <div class="panel-body">
+        <h1 style="color: #870785  ">About uS..!!</h1><hr>
+        <p style="font-size: 18px; text-align: justify; font-family: monospace;"><span style="color:#2D7BB4  ; font-size: 22px; font-weight: bold"> Iterne Thoughts</span> is a publishing platform and community where you can share personal write-ups through their website. Articles on Squidoo are called ‘lenses’ or pages. Once you’ve posted a lens, ads of similar or recommended products of what’s written is placed around your lens. This cna help you in extending your skill to a height which yyou have neven been think off.</p>
+      </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+      <div class="panel panel-default">
+      <div class="panel-body">
+        <h1 style="color: #870785  ">Our Partners..!!</h1><hr>
+        <img src="logo/1.png" style="margin-left: 30px">
+        <img src="logo/2.png" style="margin-left: 30px">
+        <img src="logo/3.png" style="margin-left: 30px">
+        <img src="logo/4.png" style="margin-left: 110px">
+        <img src="logo/5.png" style="margin-left: 30px">
+      </div>
+      </div>
+    </div>
+  </div><br><br><br>
+</div>
+
+
+<div id="section4" class="container-fluid">
+  <br><br><br>
+  <div class="container">
+    <div class="col-lg-5 col-md-5 col-sm-5">
+      <div class="panel panel-default">
+      <div class="panel-body">
+        <h1 style="text-align: center; color:#DF3A71; font-family:Segoe Print;  ">Register</h1><hr>
+        <input type="text" name="" placeholder=" &nbsp Name"  class="box" id="txtName">
+        <input type="text" name="" placeholder=" &nbsp Username"  class="box" id="txtUsername">
+        <input type="email" name="" placeholder=" &nbsp Email ID"  class="box" id="txtemail">
+        <input type="password" name="" placeholder=" &nbsp Password"  class="box" id="txtPassword">
+        <button class="button button1" style="float: right; margin-top: 20px">Register</button>
+      </div>
+      </div>
+    </div>
+    <div class="col-lg-7 col-md-7 col-sm-7">
+      <div class="panel panel-default">
+      <div class="panel-body">
+        <h1 style="text-align: center; color:#DF3A71;font-family:Segoe Print;  ">Contact Us</h1><hr>
+        <input type="text" name="" placeholder=" &nbsp Name"  class="box" id="txtName">
+        <input type="Email" name="" placeholder=" &nbsp Email ID"  class="box" id="txtEmail">
+        <textarea rows="4" cols="50" placeholder="&nbsp Concern" class="areabox" id="txtConcern"></textarea>
+        <button class="button button1" style="float: right; ">Submit</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+</div>
+
+
+
+    <div id="section5" class="container-fluid">
+    
+      <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <!--<h2 class="logo"><a href="#"> LOGO </a></h2>-->
+                    <img src="image/image1.jpg" class="round" alt="avatar" style="width: 80%">
+                </div>
+                <div class="col-sm-2">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default">Contact us</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2016 Copyright Text </p>
+        </div>
+    </footer>
+
+    </div> 
+  </body>
+</html>
